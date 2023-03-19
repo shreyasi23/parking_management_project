@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #303133;
+}
+
+/* page content style */
+#os_page_content{
+    height: 50rem;
+    width: 111rem;
+    margin: auto;
+}
+
+/* vehicle type selector style */
+
+#vehicle_type_box{
+    align-self: start;
+    margin-top: 2rem;
+    width: 34rem;
+}
+
+#vehicle_type_box label{
+    margin-right: 1rem;
+}
+
+#vehicle_type_box div{
+    width: 18rem;
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+#getDataBtn{
+    display: inline-block;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 3px 4px 0 rgb(0 0 0 / 19%);
+}
+
+#vType2{
+    width: 7rem;
+    text-align: center;
+}
+
+/* table sytle */
+table{
+    box-shadow: 0 4px 11px 0 rgb(0 0 0 / 20%), 0 1px 4px 0 rgb(0 0 0 / 19%);
+}
+
+th, td{
+    text-align: center;
+    padding: 12px 16px !important;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f4fd;
+}
+
+tr:last-of-type{
+    border-bottom: 2px solid #195197;
+}
+
+#col_heading{
+    background-color: #195197;
+    color: white;
+}
+
+#slot_occupancy_table{
+    margin-top: 2rem;
+}
+
+tbody td:last-of-type {
+    font-weight: bold;
+}
+
+tbody td:nth-child(5){
+    font-weight: bold;
+}
+
+
+/* back to dashboard button style */
+
+.btn_style{
+    margin-top: 3rem;
+    width: 23rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.19);
+}
+
+#bd_btn_cont{
+    align-self: start;
+    margin-top: 2rem;
+    margin-left: 16.5rem;
+}
+
+#bd_btn{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.19);
+}
+
+
+

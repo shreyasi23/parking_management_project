@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Park Visison|Parking history</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/occupied_slots_Style.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+    <link rel="stylesheet" href="../css/parking_history_style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="getPrkingHistory()"> 
+    <!-- navbar section -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="../images/Park Vision_bg.png">
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <p id="dateBlock">Date: <span id="currentDate"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page content -->
+    <div class="d-flex db_section_style" id="os_page_content">
+        <div>
+            <h2 class="heading_style"><strong>Parking History</strong></h2>
+        </div>
+
+        <!-- back to dashboard button and search box-->
+        <div class="container" id="btn_search_box">
+            <div class="row">
+                <div class="col-sm-3" id="btn_col">
+                    <div id="bd_btn_cont2">
+                        <a href="./index.html"><button class="btn btn-default" id="bd_btn">Back to Dashboard</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div id="search_box">
+                        <input type="text" id="myInput" onkeyup="showRecord()" placeholder="Search for vehicle number..">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slot occupancy table -->
+        <div id="slot_occupancy_table">
+            <table class="table" id="history">
+                <thead>
+                    <tr id="col_heading">
+                        <th>Parking ID</th>
+                        <th>Date</th>
+                        <th>Driver's Name</th>
+                        <th>Phone Number</th>
+                        <th>Vehicle Type</th>
+                        <th>License Plate Number</th>
+                        <th>Slot Number</th>
+                        <th>Entry time</th>
+                        <th>Exit time</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/parking_history.js"></script>
+</body>
+</html>

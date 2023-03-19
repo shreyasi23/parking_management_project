@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Park Visison|generate bill</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/occupied_slots_Style.css">
+    <link rel="stylesheet" href="../css/generate_bill_Style.css">
+    <link rel="stylesheet" href="../css/indexStyle.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="row">
+                    <div class="col-md-10">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="../images/Park Vision_bg.png">
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <p id="dateBlock">Date: <span id="currentDate"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page content section -->
+    <div id="gb_page_content">
+        <div class="container">
+            <div class="row">
+                <!-- back todashboard button -->
+                <div class="col-md-3">
+                    <div id="back_btn">
+                        <a href="./index.html"><button class="btn btn-default btn_style3">Back to Dashboard</button></a>
+                    </div>
+                </div>
+
+                <!-- heading -->
+                <div class="col-md-6">
+                    <div id="gb_page_heading">
+                        <h2 class="heading_style"><strong>Generate Bill</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- form -->
+                    <div id="form_cont">
+                        <form id="form_align" class="form">
+                            <div class="form_fields margin_right_0" id="vehicleMakeBlock">
+                                <label for="liscensePlateNo">License plate number <span class="required"> *</span></label>
+                                <input type="text" id="vName" name="vehilcleNo">
+                            </div>
+                            <div id="form_row_2">
+                                <span class="form_fields" id="exitTimeBlock">
+                                    <label for="exitTime">Exit time <span class="required"> *</span></label>
+                                    <input type="time" id="exitTime" name="exitTime">
+                                </span>
+                                <span class="form_fields margin_right_0" id="paymentMethBox">
+                                    <label for="paymentMethod">Payment method <span class="required"> *</span></label>
+                                        <select id="pType" name="paymentMethod">
+                                            <option value="cash">Cash</option>
+                                            <option value="UPI">UPI</option>
+                                        </select>
+                                </span>
+                            </div>
+                            <div>
+                                <input class="btn btn-default btn_style3" id= "generateBill" type="submit" value="Generate Bill">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- bill section -->
+                <div class="col-md-4">
+                    <div id="bill_section">
+                        <div id="bill_box">
+                            <button id="print_button" onclick="printBill()">
+                                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+                            </button>
+                            <div id="bill_body">
+                                <p>Generated bill will appear here</p>
+                            </div>
+                        </div>
+                        <!-- back todashboard button
+                        <div id="back_btn">
+                            <a href="./index.html"><button class="btn btn-default btn_style2 btn_style">Back to Dashboard</button></a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="QR_code_box">
+                        <div id="QR_code_img" class="thumbnail">
+                            <img src="../images/QrCode_copy1.jpeg" alt ="QR code" id="qr_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal screen -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id = "message"></p>
+        </div>
+      </div>
+    <script src="../js/generate_bill_logic.js"></script>
+</body>
+
+</html>

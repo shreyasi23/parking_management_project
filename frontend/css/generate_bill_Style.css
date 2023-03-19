@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #303133;
+}
+
+#gb_page_heading{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+form label{
+    display: block;
+}
+
+form input{
+    width: 27rem;
+}
+
+#form_cont{
+    /* width: 70rem; */
+    margin-top: 2rem;
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    height: 35rem;
+    border-radius: 6px;
+}
+
+#form_align{
+    display: block;
+    width: 28rem;
+    margin: auto;
+    /* margin-left: 13rem; */
+    margin-top: 2rem;
+}
+
+.margin_right_0{
+    margin-right: 0px!important;
+}
+
+/* #vehicleMakeBlock{
+    margin-right: 10rem;
+} */
+
+#exitTimeBlock{
+    width: 12rem;
+}
+
+#exitTime{
+    width: 12rem !important;
+}
+
+.btn_style3 {
+    margin-top: 3rem !important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.19);
+}
+
+#generateBill{
+    display: block;
+    width: 18rem!important;
+    margin-left: 4rem;
+}
+
+#form_row_2{
+    margin-top: 2rem;
+    width: 31rem;
+}
+
+#pType{
+    width: 12rem;
+    padding: 3px;    
+}
+
+#paymentMethBox{
+    width: 14rem;
+}
+
+
+/* bill section style */
+#bill_section{
+    margin-top: 2rem;
+}
+
+#bill_box{
+    border: 2px solid #195197;
+    width: 35rem;
+    height: 35rem;
+    text-align: center;
+    border-radius: 6px;
+    /* font-size: 14px; */
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+}
+
+/* #bill_box p{
+    padding: 2rem;
+} */
+/* #back_btn{
+    /* margin-left: 6rem; 
+} */
+
+#print_button{
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    border-radius: 17px;
+    position: relative;
+    top: 5px;
+    left: 152px;
+    background-color: #e8f4fd;
+    color:#195197;
+    border:none;
+}
+
+#print_button:hover{
+    border:2px solid #195197;
+}
+
+#print_button span{
+    padding: 5px;
+} 
+
+#box{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+/* QR code section */
+
+#qr_img{
+    height: 34rem;
+}
+
+#QR_code_img{
+    width: 35rem;
+    margin: auto;
+    margin-top: 2rem;
+    border: 1px solid #f0f8ff;
+    background-color: #f0f8ff;
+}
+
