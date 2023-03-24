@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5f1ff;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#gb_page_heading{
+    /* text-align: center; */
+    margin-top: 5rem;
+}
+
+form label{
+    display: block;
+    font-weight: normal;
+}
+
+form input{
+    width: 27rem;
+    height: 3.2rem;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+    padding: 5px;
+}
+
+#form_cont{
+    /* width: 70rem; */
+    margin-top: 2rem;
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    height: 35rem;
+    border-radius: 6px;
+}
+
+#form_align{
+    display: block;
+    width: 28rem;
+    /* margin: auto; */
+    /* margin-left: 13rem; */
+    margin-top: 2rem;
+}
+
+.margin_right_0{
+    margin-right: 0px!important;
+}
+
+/* #vehicleMakeBlock{
+    margin-right: 10rem;
+} */
+
+#exitTimeBlock{
+    width: 12rem;
+}
+
+#exitTime{
+    width: 12rem !important;
+}
+
+.btn_style3 {
+    margin-top: 3rem !important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 4px 0 rgba(0,0,0,0.19);
+}
+
+#generateBill{
+    display: block;
+    width: 14rem!important;
+    /* margin-left: 4rem; */
+}
+
+#form_row_2{
+    margin-top: 2rem;
+    width: 31rem;
+}
+
+#pType{
+    width: 12rem;
+    padding: 3px;
+    height: 3.2rem;
+    border-radius: 6px;
+    border: 1px solid lightgrey;    
+}
+
+#paymentMethBox{
+    width: 14rem;
+}
+
+
+/* bill section style */
+#bill_section{
+    margin-top: 2rem;
+}
+
+#bill_box{
+    border: 2px solid #195197;
+    width: 32rem;
+    height: 32rem;
+    text-align: center;
+    border-radius: 6px;
+    /* font-size: 14px; */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    background-image: url('../images/Screenshot_2023-03-20_154506-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    background-size: 200px;
+}
+
+/* #bill_box p{
+    padding: 2rem;
+} */
+/* #back_btn{
+    /* margin-left: 6rem; 
+} */
+
+#print_button{
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    border-radius: 17px;
+    position: relative;
+    top: 5px;
+    left: 135px;
+    background-color: #e8f4fd;
+    color:#195197;
+    border:none;
+}
+
+#print_button:hover{
+    border:2px solid #195197;
+}
+
+#print_button span{
+    padding: 5px;
+} 
+
+#box{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 317px;
+}
+
+/* QR code section */
+
+#qr_img{
+    height: 21rem;
+    border-radius: 13px;
+}
+
+#QR_code_img{
+    width: 35rem;
+    margin: auto;
+    margin-top: 2rem;
+    border: 1px solid #d3e7ff;
+    background-color: #d3e7ff;
+}
+
+/* new design style */
+
+#flex_box{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+}
+
+#form_jbt{
+    margin-top: 5%;
+    height: 29rem;
+    margin-left: 13%;
+}
+
+#no_left_pad{
+    padding-right: 0px!important;
+}
+
+#col{
+    background-color:#d3e7ff;
+    height: 100vh;
+}
