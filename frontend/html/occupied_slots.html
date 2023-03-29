@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Park Visison|Occupied slots</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/occupied_slots_Style.css">
+    <link rel="stylesheet" href="../css/left_nav_style.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/parking_history_style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="getOccupancyData()"> 
+    <div class="container-fluid">
+        <div class="row">
+             <!-- left navigation bar section -->
+            <div class="col-sm-2 col-md-2 col-lg-2" id="left_nav">
+                <div id="side_nav_cont">
+                    <div>
+                        <h2>ParkGenie</h2>
+                    </div>
+                    <div>
+                        <ul id="ul_style">
+                            <li><a href="index.html"><img src="../images/material-symbols_space-dashboard-rounded.png"><span class="li_text">Dashboard</span></a></li>
+                            <li><a href="allocate_slot.html"><img src="../images/ri_parking-box-fill.png"><span class="li_text">Allocate Parking</span></a></li>
+                            <li><a href="occupied_slots.html" class="active"><img src="../images/fluent_align-space-evenly-horizontal-20-filled.png"><span class="li_text">Occupied Slots</span></a></li>
+                            <li><a href="parking_history.html"><img src="../images/ic_round-history.png"><span class="li_text">Parking History</span></a></li>
+                            <li><a href="generate_bill.html"><img src="../images/mingcute_bill-fill.png"><span class="li_text">Generate Bill</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- right side occupied slots table-->
+            <div class="col-sm-10 col-md-10 col-lg-10 right_section">
+                <div class="jumbotron stats_display table_container" id="tc">
+                    <div id="slot_occupancy_table">
+                        <div class="head_search_box">
+                            <h4 class="heading_style">
+                                Occupied Slots
+                            </h4>
+                            <div id="search_box">
+                                <input type="text" id="myInput" onkeyup="showRecord()" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="table_space">
+                            <table class="table" id="occupied">
+                                <thead>
+                                    <tr>
+                                        <th>Driver's name</th>
+                                        <th>Phone no.</th>
+                                        <th>Vehicle type</th>
+                                        <th>Vehicle no.</th>
+                                        <th>Slot no.</th>
+                                        <th>Entry time</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+    <!-- page content
+    <div class="d-flex db_section_style" id="os_page_content">
+        <div>
+            <h2 class="heading_style"><strong>Occupied Slots</strong></h2>
+        </div>
+
+         back to dashboard button 
+        <div id="bd_btn_cont">
+            <a href="./index.html"><button class="btn btn-default" id="bd_btn">Back to Dashboard</button></a>
+        </div>
+        
+         slot occupancy table 
+        <div id="slot_occupancy_table">
+            <table class="table">
+                <thead>
+                    <tr id="col_heading">
+                        <th>Driver's Name</th>
+                        <th>Phone Number</th>
+                        <th>Vehicle Type</th>
+                        <th>License Plate Number</th>
+                        <th>Slot Number</th>
+                        <th>Entry time</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div> -->
+    <script src="../js/occupied_slots_logic.js"></script>
+</body>
+</html>

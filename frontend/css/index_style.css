@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+} */
+
+
+body{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5f1ff;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.right_section{
+    margin-left: 16.5%;
+    /* background-image: url('../images/parking-graphic.jpg'); */
+    background-image: url('../images/bg_gif.gif');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.right_section::after{
+    content: "";
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-color: #e5f1ff;
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: .6;
+    z-index: 0;
+}
+
+.right_section > *{
+    z-index: 100;
+    position: relative;
+}
+
+#page_container{
+    min-height: 100vh;
+}
+
+
+
+/* dashboard style */
+
+/* #test{
+    background-color: white !important;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 5px 5px 5px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+} */
+
+#d_content_holder{
+    margin-top: 5%;
+}
+
+/* .stats_display{
+    height: 21rem;
+    width: 38rem;
+} */
+
+/* #availability{
+    margin-left: 28%;
+}
+
+#revenue{
+    margin-left: 0%;
+} */
+
+#stats_section{
+    /* border: 2px solid black; */
+    /* margin-top: 6%; */
+    margin: 4% auto 3% auto;
+    /* margin-top: 4%; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 83%;
+}
+
+.stats_display{
+    /* border:2px solid black; */
+    height: 24rem;
+    width: 38rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 1px 1px 9px #aaaaaa;
+    padding: 24px;
+}
+
+/* #availability{
+    margin-left: 5%;
+    /* padding: 24px; *
+}*/
+
+#revenue{
+    background-image: url('../images/b1.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+#revenue::after{
+    content: "";
+    display:block;
+    width: inherit;
+    height: inherit;
+    background-color: #ffffffbd;
+    position: absolute;
+    top: 0;
+    left:43.9rem;
+    opacity: .8;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+#revenue > *{
+    z-index: 100;
+    position: relative;
+}
+
+/* #occupied_slots_sec{
+    /* margin-top: 4%; 
+} */
+
+.table_container{
+    height: auto;
+    width: 78%;
+    margin: auto;
+}
+
+.heading_style{
+    color: #195197;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    font-weight: bold;
+}
+
+/* .content_H_spacing{
+    /* margin-top: 8%; *
+    margin-top: 3%;
+} */
+
+/* parking availability style */
+
+/* .stat{
+    /* border: 2px solid black; 
+    height: 14rem;
+    width: 14rem;
+} */
+
+#stats{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.avail_stat{
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.stat_in{
+    /* border: 2px solid red; */
+    height: 13rem;
+    width: 14rem;
+    /* background-color: #1952975e; */
+    background-color:#5e91cf5c;
+    box-shadow: 1px 5px 9px #aaaaaa;
+    border-radius: 12px;
+    margin-top: 3%;
+}
+
+.stat_label{
+    text-align: center;
+    padding-top: 8%;
+    color: #195197;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* .subscript{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 2%;
+} */
+
+.margin_right{
+    margin-right: 5%;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+
+/* total revenue style */
+#revenue_Hs{
+   display: flex;
+   justify-content: space-between;
+}
+
+#flex_cont{
+    border: 2px solid #5e91cf5c;
+    background-color: #5e91cf5c;
+    font-weight: 600;
+    height: 3rem;
+    width: 11rem;
+    margin-top: -2%;
+    border-radius: 4px;
+}
+
+#flex_cont p{
+    margin-bottom: 0px ;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#amt_margin{
+    margin-top: 13%;
+}
+
+/* #amt_margin p{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 500;
+} */
+
+
+/* occupied slots table style */
+.table td, .table th{
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    padding: 6px !important;
+
+}
+
+.table td{
+    font-weight: normal !important;
+    padding: 8px 6px!important;
+}
+
+tbody td:nth-child(5){
+    font-weight: 600 !important;
+}
+
+/* #table_container {
+    height: auto;
+    /* width: 89%; *
+    width: 78%;
+    margin: auto;
+    margin-bottom: 2rem;
+} */
+
+.jumbotron{
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+    padding-bottom: 2px!important;
+    margin-bottom: 2%;
+}
+
+/* #occupied_slots_sec{
+    margin-top: 4%;
+} */
+
+#table_space{
+    margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
